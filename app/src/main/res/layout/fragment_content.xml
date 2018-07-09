@@ -14,6 +14,24 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To other layouts"
-        android:onClick="onOtherLayoutsClick"/>
+        android:text="To RelativeLayout"
+        android:onClick="onRelativeLayoutClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To TableLayout"
+        android:onClick="onTableLayoutClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To ConstraintLayout"
+        android:onClick="onConstraintLayoutClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To FlexLayout"
+        android:onClick="onFlexLayoutClick"/>
 </LinearLayout>

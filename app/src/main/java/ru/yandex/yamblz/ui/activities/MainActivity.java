@@ -36,8 +36,27 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    public void onOtherLayoutsClick(View view) {
+    public void onRelativeLayoutClick(View view) {
         Intent intent = new Intent(this, LayoutDemoActivity.class);
+        intent.putExtra("layout", "relative");
+        startActivity(intent);
+    }
+
+    public void onTableLayoutClick(View view) {
+        Intent intent = new Intent(this, LayoutDemoActivity.class);
+        intent.putExtra("layout", "table");
+        startActivity(intent);
+    }
+
+    public void onConstraintLayoutClick(View view) {
+        Intent intent = new Intent(this, LayoutDemoActivity.class);
+        intent.putExtra("layout", "constraint");
+        startActivity(intent);
+    }
+
+    public void onFlexLayoutClick(View view) {
+        Intent intent = new Intent(this, LayoutDemoActivity.class);
+        intent.putExtra("layout", "flex");
         startActivity(intent);
     }
 }
