@@ -1,8 +1,10 @@
 package ru.yandex.yamblz.ui.activities;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -32,5 +34,10 @@ public class MainActivity extends BaseActivity {
                     .replace(R.id.main_frame_layout, new ContentFragment())
                     .commit();
         }
+    }
+
+    public void onOtherLayoutsClick(View view) {
+        Intent intent = new Intent(this, LayoutDemoActivity.class);
+        startActivity(intent);
     }
 }
