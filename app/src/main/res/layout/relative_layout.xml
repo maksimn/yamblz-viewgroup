@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-
-<TextView
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Player through RelativeLayout"/>
-</LinearLayout>
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/image00"
+        style="@style/Item.00"/>
+
+    <ImageView
+        android:id="@+id/image01"
+        android:layout_toRightOf="@+id/image00"
+        style="@style/Item.01"/>
+
+    <ImageView
+        android:id="@+id/image02"
+        android:layout_toRightOf="@+id/image01"
+        style="@style/Item.02"/>
+
+    <ImageView
+        android:id="@+id/image10"
+        android:layout_below="@+id/image00"
+        style="@style/Item.10" />
+
+    <ImageView
+        android:id="@+id/image11"
+        android:layout_below="@+id/image00"
+        android:layout_toRightOf="@+id/image10"
+        style="@style/Item.11" />
+
+    <ImageView
+        android:id="@+id/image12"
+        android:layout_below="@+id/image00"
+        android:layout_toRightOf="@+id/image11"
+        style="@style/Item.12" />
+</RelativeLayout>
