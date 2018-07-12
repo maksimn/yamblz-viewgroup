@@ -96,6 +96,7 @@ dependencies {
 
     compile libraries.timber
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.github.mmin18:flexlayout:1.2.7'
 
     // Developer tools (Developer Settings)
     compile libraries.stetho

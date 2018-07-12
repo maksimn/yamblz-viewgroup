@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<com.github.mmin18.widget.FlexLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flex_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Player through FlexLayout"/>
-</LinearLayout>
+    <ImageView
+        android:id="@+id/image00"
+        app:layout_left="50% - 142dp"
+        style="@style/Item.00"/>
+
+    <ImageView
+        android:id="@+id/image01"
+        app:layout_left="image00.right"
+        style="@style/Item.01"/>
+
+    <ImageView
+        android:id="@+id/image02"
+        app:layout_left="image01.right"
+        style="@style/Item.02"/>
+
+    <ImageView
+        android:id="@+id/image10"
+        app:layout_top="image00.bottom"
+        app:layout_left="image00.left"
+        style="@style/Item.10"/>
+
+    <ImageView
+        android:id="@+id/image11"
+        app:layout_top="image00.bottom"
+        app:layout_left="image00.right"
+        style="@style/Item.11"/>
+
+    <ImageView
+        android:id="@+id/image12"
+        app:layout_top="image00.bottom"
+        app:layout_left="image01.right"
+        style="@style/Item.12"/>
+
+</com.github.mmin18.widget.FlexLayout>
