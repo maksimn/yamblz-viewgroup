@@ -95,6 +95,7 @@ dependencies {
     annotationProcessor  libraries.butterKnifeCompiler
 
     compile libraries.timber
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
 
     // Developer tools (Developer Settings)
     compile libraries.stetho
