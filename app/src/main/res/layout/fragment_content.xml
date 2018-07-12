@@ -11,27 +11,37 @@
 
     <include layout="@layout/linear_layout" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To RelativeLayout"
-        android:onClick="onRelativeLayoutClick"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To TableLayout"
-        android:onClick="onTableLayoutClick"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To ConstraintLayout"
-        android:onClick="onConstraintLayoutClick"/>
 
-    <Button
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To FlexLayout"
-        android:onClick="onFlexLayoutClick"/>
+        android:layout_gravity="center_horizontal">
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To RelativeLayout"
+                android:onClick="onRelativeLayoutClick"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To TableLayout"
+                android:onClick="onTableLayoutClick"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To ConstraintLayout"
+                android:onClick="onConstraintLayoutClick"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To FlexLayout"
+                android:onClick="onFlexLayoutClick"/>
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
